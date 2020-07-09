@@ -1,27 +1,38 @@
-h1,
-h3 {
-  /* Top and Bottom of page text*/
+h1 {
+  /* Top and Bottom of page text */
   background-color: seagreen;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 10px;
+  font-size: 40px;
 }
 
+
 h2 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+h3 {
+  /* Bottom of page */
+  background-color: seagreen;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
 }
 
 p,
 ol,
 ul {
-  /*Main text on page + Lists */
+  /* Main text on page + Lists */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    font-size: 16px;
 }
 
-nav {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+article {
+  margin-top: 40px;
 }
 
 hr {
@@ -33,7 +44,7 @@ hr {
 
 body { /*Background Color */
     background-color: lightgray;
-    padding: 10px
+    padding: 0px;
 }
 
 .align-center {
@@ -47,23 +58,23 @@ body { /*Background Color */
   text-align: justify;
 }
 .wrapper {
-  width: 500px;
+  width: 700px;
   margin: auto;
 }
 
 /* Link Coloration */
 
 a:link {
-  color: blue;
+  color: seagreen;
 }
 a:visited {
-  color: red;
+  color: brown;
 }
 
 a:hover {
-  color: lightblue;
+  color: green;
 }
 
 a:active {
-  color: darkblue;
+  color: darkgreen;
 }
