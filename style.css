@@ -1,68 +1,142 @@
+ /* Top and Bottom of page text */
 h1 {
-  /* Top and Bottom of page text */
   background-color: seagreen;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 10px;
-  font-size: 40px;
+  font-size: 45px;
+  text-align: center;
+  margin: auto;
 }
-
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
 }
 
+/* Bottom of page */
+
 h3 {
-  /* Bottom of page */
   background-color: seagreen;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 10px;
+  text-align: center;
+  margin: auto;
 }
+
+/* Main Text + Lists */
 
 p,
 ol,
 ul {
-  /* Main text on page + Lists */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-size: 16px;
+  font-size: 18px;
+  text-align: justify;
 }
 
+.item h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+main .intro {
+  font-size: 20px;
+}
+
+/* Images */
+
+img.main {
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+img.rounded {
+  width: 75%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Container Styling */
+
 article {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 500px
-    height: 4px
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid brown;
 }
 
-body { /*Background Color */
-    background-color: lightgray;
-    padding: 0px;
+body {
+  /*Background Color */
+  background-color: lightgray;
+  padding: 0px;
 }
+
+
+/* Alignment Classes */
 
 .align-center {
-  /* Alignment Class - Center */
   text-align: center;
   margin: auto;
 }
 
 .align-justify {
-  /* Alignment Class - Justify */
   text-align: justify;
 }
+
+/* Groups and Items (Mobile First) */
+
 .wrapper {
-  width: 700px;
+  width: 100%;
   margin: auto;
+  
 }
 
-/* Link Coloration */
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items (Desktop */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Link Elements */
 
 a:link {
   color: seagreen;
