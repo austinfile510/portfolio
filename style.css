@@ -1,19 +1,68 @@
- /* Top and Bottom of page text */
-h1 {
+/* Header (Mobile First) */
+
+header {
   background-color: seagreen;
+  margin: 0 auto;
+}
+
+/* Making sure the subheading color is consistent throughout the header */
+header h2 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  width: 90%;
+  justify-content: center;
+  max-width: 350px;
+}
+
+
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Header (Desktop */
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* Top and Bottom of page text */
+h1 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  font-size: 45px;
+  padding-top: 10px;
+  font-size: 30px;
   text-align: center;
-  margin: auto;
+  margin-bottom: 2px;
+  
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  padding: 10px;
-  padding-top: 20px;
+  font-size: 20px;
   text-align: center;
   margin: auto;
 }
@@ -87,7 +136,6 @@ body {
   padding: 0px;
 }
 
-
 /* Alignment Classes */
 
 .align-center {
@@ -99,12 +147,25 @@ body {
   text-align: justify;
 }
 
+/* Link Elements */
+
+a:link {
+  color: seagreen;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: darkgreen;
+}
+
 /* Groups and Items (Mobile First) */
 
 .wrapper {
   width: 100%;
   margin: auto;
-  
 }
 
 .group {
@@ -123,7 +184,7 @@ body {
   margin: 10px;
 }
 
-/* Groups & Items (Desktop */
+/* Groups & Items (Desktop) */
 
 @media all and (min-width: 800px) {
   .wrapper {
@@ -134,21 +195,4 @@ body {
   .group {
     flex-direction: row;
   }
-}
-
-/* Link Elements */
-
-a:link {
-  color: seagreen;
-}
-a:visited {
-  color: brown;
-}
-
-a:hover {
-  color: green;
-}
-
-a:active {
-  color: darkgreen;
 }
