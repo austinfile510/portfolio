@@ -46,7 +46,6 @@ header nav ul li:last-child a {
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 /* Top and Bottom of page text */
@@ -57,7 +56,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 2px;
-  
+
 }
 
 h2 {
@@ -76,6 +75,31 @@ h3 {
   padding: 10px;
   text-align: center;
   margin: auto;
+}
+
+/* Contact Form */
+
+form label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+form input[type=text] {
+  color: #000000;
+  font-size: 14 px;
+}
+
+form textarea {
+  height: 100px;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+form button {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Main Text + Lists */
@@ -130,8 +154,9 @@ hr {
   border: 0.5px solid brown;
 }
 
+ /*Background Color */
+
 body {
-  /*Background Color */
   background-color: lightgray;
   padding: 0px;
 }
