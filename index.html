@@ -153,7 +153,46 @@
         <article id="projects">
           <h2>Projects</h2>
           <div class="group">
-            <div class="item"></div>
+            <div class="item">
+              <img
+              src="images/gaming-quiz-logo-image.jpg"
+              alt="Gaming Quiz Logo - Controller"
+              class="rounded"
+            />
+            <h2>
+              <a href="https://austinfile510.github.io/quiz-app/">Video Game History Quiz</a>
+            </h2>
+            <p>
+              This is a simple quiz app I built using jQuery. Test your video game knowledge!
+            </p>
+            <h4><a href="https://github.com/austinfile510/quiz-app">Github</a></h4>
+            </div>
+            <div class="item">
+              <img
+                src="images/lyrical-search-image.jpg"
+                alt="Lyrical Search Logo - Records"
+                class="rounded"
+              />
+              <h2>
+                <a href="https://austinfile510.github.io/lyrical-search"
+                  >Lyrical Search</a
+                >
+              </h2>
+              <p>
+                Lyrical Search is an easy-to-use app to find the lyrics to your
+                favorite song. Just enter the artist, song, and go!
+              </p>
+              <p>
+                I made this app using several APIs, including the
+                <a href="https://developers.google.com/youtube/v3"
+                  >Youtube API</a
+                >, <a href="https://www.theaudiodb.com/">TheAudioDB</a>, a
+                database of artist and song information, and
+                <a href="https://lyricsovh.docs.apiary.io/">lyrics.ovh</a> for
+                song lyrics.
+              </p>
+              <h4><a href="https://github.com/austinfile510/lyrical-search">Github</a></h4>
+            </div>
           </div>
         </article>
       </div>
@@ -164,7 +203,7 @@
         <article id="contact">
           <h2>Contact</h2>
           <div class="group">
-            <div class="item">
+            <div id = "lyrical-search" class="item">
               <p>
                 Please check out some of my other sites below and feel free to
                 reach out!
@@ -181,13 +220,15 @@
             </div>
             <div class="item">
               <form action="https://formspree.io/mgendynp" method="post">
-                <label for="email">
-                  Your email:
-                </label>
-                <input id = "email" type="text" name="_replyto" autofocus= "on" required/>
-                <label for="form-message">
-                  Send me a message:
-                </label>
+                <label for="email"> Your email: </label>
+                <input
+                  id="email"
+                  type="text"
+                  name="_replyto"
+                  autofocus="on"
+                  required
+                />
+                <label for="form-message"> Send me a message: </label>
                 <textarea name="message"></textarea>
                 <button type="submit">Send</button>
               </form>

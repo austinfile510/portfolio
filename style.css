@@ -56,7 +56,6 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 2px;
-
 }
 
 h2 {
@@ -73,6 +72,13 @@ h3 {
   color: white;
   font-family: "Montserrat", sans-serif;
   padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
   text-align: center;
   margin: auto;
 }
@@ -132,6 +138,7 @@ img.main {
   width: 85%;
   margin: 0 auto;
   border-radius: 10px;
+  display: block;
 }
 
 img.rounded {
@@ -140,6 +147,15 @@ img.rounded {
   text-align: center;
   margin: 0 auto;
   display: block;
+}
+
+img.projec {
+  width: 35%;
+  margin: o auto;
+  border-radius: 10px;
+  text-align:center;
+  display: block;
+  max-width: 00px;
 }
 
 /* Container Styling */
