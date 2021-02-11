@@ -1,2 +1,2 @@
-# portfolio
+# Portfolio
 Austin's Portfolio Website
