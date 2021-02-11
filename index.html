@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -148,7 +148,7 @@
       </div>
 
       <!--Projects-->
-      <div class="wrapper" ?>
+      <div class="wrapper">
         <hr />
         <article id="projects">
           <h2>Projects</h2>
@@ -159,9 +159,9 @@
               alt="Gaming Quiz Logo - Controller"
               class="rounded"
             />
-            <h2>
+            <h3 style="background-color: transparent">
               <a href="https://austinfile510.github.io/quiz-app/">Video Game History Quiz</a>
-            </h2>
+            </h3>
             <p>
               This is a simple quiz app I built using jQuery. Test your video game knowledge!
             </p>
@@ -173,11 +173,11 @@
                 alt="Lyrical Search Logo - Records"
                 class="rounded"
               />
-              <h2>
+              <h3 style="background-color: transparent">
                 <a href="https://austinfile510.github.io/lyrical-search"
                   >Lyrical Search</a
                 >
-              </h2>
+              </h3>
               <p>
                 Lyrical Search is an easy-to-use app to find the lyrics to your
                 favorite song. Just enter the artist, song, and go!
@@ -190,8 +190,8 @@
                 database of artist and song information, and
                 <a href="https://lyricsovh.docs.apiary.io/">lyrics.ovh</a> for
                 song lyrics.
-                <p>Technologies Used: jQuery, HTML, </p>
               </p>
+                <p>Technologies Used: jQuery, HTML, </p>
               <h4><a href="https://github.com/austinfile510/lyrical-search">Github</a></h4>
             </div>
             <div class="item">
@@ -199,9 +199,9 @@
               src="images/recipe-keeper-image.jpg"
               alt="Recipe Keeper App - Screenshot"
               class="rounded" />
-              <h2>
+              <h3 style="background-color: transparent">
                 <a href="https://recipe-keeper-client.vercel.app">Recipe Keeper</a>
-              </h2>
+              </h3>
               <p>Recipe Keeper is a full-stack recipe book app. You can create recipes and share them with the community, or keep secret recipes to yourself, all in one place!</p>
               <p>Technologies Used: Create-React-App, Express, PostgreSQL, Node.js</p>
               <h4><a href="https://github.com/austinfile510/recipe-keeper-server">Github, Server</a></h4>
@@ -242,7 +242,7 @@
                   required
                 />
                 <label for="form-message"> Send me a message: </label>
-                <textarea name="message"></textarea>
+                <textarea id="form-message" name="form-message"></textarea>
                 <button type="submit">Send</button>
               </form>
             </div>
@@ -253,7 +253,7 @@
 
     <footer>
       <!--Copyright-->
-      <h3>&copy 2021 Austin File</h3>
+      <h3>&copy; 2021 Austin File</h3>
     </footer>
     <script src="script.js"></script>
   </body>
