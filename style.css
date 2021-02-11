@@ -194,6 +194,10 @@ a:link {
   color: seagreen;
 }
 
+menu a:link {
+  color: white
+}
+
 a:hover {
   color: green;
 }
